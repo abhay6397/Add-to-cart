@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;   
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    margin: 10px 0 20px 0 ;
+    position: relative;
+}
+.menu{
+    position: absolute;
+    left: 30px;
+}
+.icon{
+    position: absolute;
+    right: 30px;
+    
+}
+.cart-container{
+    position: absolute;
+    right: 30px;
+    margin-top: 25px;
+
+}
+.header input{
+    height: 40px;
+    width: 500px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 3px;
+    font-size: 1.2em;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    background-color: whitesmoke;
+    height: 380px;
+    width: 300px;
+    box-shadow: 0px 0px 2px gray;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+}
+img{
+    height: 200px;
+    width: 80%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card h3{
+    padding: 30px 0px 15px 0px;
+}
+.nav-icon{
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+.cart-item{
+    position:relative;
+    margin: 10px 3px;
+    padding: 10px;
+    z-index: 10;
+    background-color:blanchedalmond;
+    width: 320px;
+    max-height: 80vh;
+    box-shadow: 0px 0px 3px gray;
+    overflow-x: auto;
+}
+.items{
+    display: flex;
+    align-items: center;  
+    justify-content: space-around;
+    border-bottom: 1px solid gray;
+    padding: 6px;
+    height:120px ;
+
+}
+#cart-image{
+    background-color: blanchedalmond;
+    color: blanchedalmond;
+    height: 80px;
+    width: 60px;
+    background-position: center;
+    background-size: contain;
+    padding: 5px;
+}
+.card button{
+    padding: 5px;
+    font-size: 20px;
+    background-color: #BBC3A4;
+    /* color: white; */
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 8px;
+
+}
+.paisa{
+    font-weight: 800;
+    margin-top: 5px;
+}
+.remove{
+    border: none;
+    outline: none;
+    background-color:blanchedalmond;
+    font-size: 1.5rem;
+}
+
+@media (max-width:600px) {
+    .header input{
+        width: 200px;
+    }
+}
